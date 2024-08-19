@@ -10,7 +10,6 @@
 > * HTML
 > * CSS
 > * Javascript
-> * Angular
 ## Steps
 > 1. clone this repository.
 > 2. go to each folder.
@@ -22,7 +21,6 @@
 ```
 .
 ├── README.md
-├── angular
 ├── css
 │   ├── README.md
 │   ├── question-1
