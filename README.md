@@ -48,3 +48,8 @@
 │   └── question-5.html
 └── javascript
 ```
+---
+
+<p><sub>Shaping the Future of Work Since 2010: Talentbank<br>As seen on: Bernama | The Star | The Edge | Yahoo! | Sin Chew Online | World of Buzz | Vulcan Post | Nanyang Siang Pau</sub></p>
+
+<p><sub>Talentbank Sdn Bhd (Formerly Known as HRINCAMPUS Sdn Bhd)<br>B-0-19, Plaza Damas 3, Jalan Sri Hartamas 1, 50480 Kuala Lumpur, Malaysia.</sub></p>
