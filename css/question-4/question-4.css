@@ -1,0 +1,64 @@
+/* CSS variables are useful to allow for better readability,
+ensure that common properties shared across the website are consistent,
+and only need to be maintained in one place
+
+Below is an example of how i store color variables for dark/light mode
+*/
+
+:root {
+    --typography-light: #222;
+    --primary-light: #f1f1f1;
+    --secondary-light: #bae8e8;
+    --accent-light: #ffd803;
+
+    --typography-dark: #fff;
+    --primary-dark: #0f0e17;
+    --secondary-dark: #f25f4c;
+    --accent-dark: #e53170;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.palette-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.light {
+    color: var(--typography-light);
+    .primary {
+        background-color: var(--primary-light);
+    }
+    .secondary {
+        background-color: var(--secondary-light);
+    }
+    .accent {
+        background-color: var(--accent-light);
+    }
+}
+
+.dark {
+    color: var(--typography-dark);
+    .primary {
+        background-color: var(--primary-dark);
+    }
+    .secondary {
+        background-color: var(--secondary-dark);
+    }
+    .accent {
+        background-color: var(--accent-dark);
+    }
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

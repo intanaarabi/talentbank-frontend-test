@@ -1,0 +1,9 @@
+
+  .star::before, .star::after {
+    content: '★'; 
+  }
+
+  .first-line::first-line {
+    font-size:4em;
+    font-style: bold;
+  }

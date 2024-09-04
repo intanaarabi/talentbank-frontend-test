@@ -1,0 +1,19 @@
+.container {
+    padding: 1em;
+}
+
+button {
+    background-color:cadetblue;
+    color: white;
+    border: 0px;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 1.5em;
+    transition: background-color 0.3s, padding 0.3s; /* this animates the background color and padding */
+}
+
+button:hover {
+    background-color:rgb(153, 199, 201);
+    padding: 4px 12px;
+    color: white;
+}
