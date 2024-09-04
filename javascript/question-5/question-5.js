@@ -22,15 +22,24 @@ for (let i = 1; i <= 100000; i++) {
 // DO NOT EDIT THIS PART***
 
 function generateUsersDetail(userIds, userNames, userPhotos) {
-    const result = [];
+    //Generate a dictionary map for faster lookup
+    //Avoid find() to avoid scanning the array multiple times
+    const userNamesMap = userNames.reduce((acc, user) => {
+        acc[user.userId] = user.name;
+        return acc;
+    }, {});
+    
+    const userPhotosMap = userPhotos.reduce((acc, user) => {
+        acc[user.userId] = user.photo;
+        return acc;
+    }, {});
 
-    userIds.forEach((userId) => {
-        result.push({
-            userId,
-            fullName: userNames?.find(uD => uD.userId === userId)?.name || '',
-            photo: userPhotos?.find(uD => uD.userId === userId)?.photo || '',
-        })
-    })
+    const result = userIds.map(userId => ({
+        val: userId,
+        fullName: userNamesMap[userId] || '',  
+        photo: userPhotosMap[userId] || '' 
+    }));
+
     return result;
 }
 
